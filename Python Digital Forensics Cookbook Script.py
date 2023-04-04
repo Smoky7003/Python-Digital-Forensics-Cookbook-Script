@@ -19,7 +19,7 @@ __version__ = "v0.1"
 parser = argparse.ArgumentParser(description=__description__, epilog="Developed by {}".format(", ".join(__authors__)))
 parser.add_argument("--scan", help="Scan a directory",action='store_true')
 parser.add_argument("--metadata", help="Analyze a file metadata",action='store_true')
-parser.add_argument("--copy-metadata", help="Analyze a file metadata",action='store_true')
+parser.add_argument("--copy-metadata", help="Copy a file without changing metadata (WINDOWS ONLY)",action='store_true')
 parser.add_argument("--path","-p", help="Path to a file or directory", required=False)
 parser.add_argument("--output", help="Path to output file")
 parser.add_argument("--extension", help="search files with a specific extension")
